@@ -1,0 +1,5 @@
+public class Counting {
++	public static int getPitsa() {
+  return 555;
+  }
+  
