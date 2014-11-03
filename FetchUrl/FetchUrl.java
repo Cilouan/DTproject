@@ -9,6 +9,7 @@ import java.net.URLConnection;
 import java.net.MalformedURLException;
 import java.util.Scanner;
 
+
 public class FetchUrl {
 
 public static void main(String[] args) {
@@ -22,7 +23,7 @@ public static void main(String[] args) {
         is = url.openStream();
         br = new BufferedReader(new InputStreamReader(is));
 
-        while ((line = br.readLine()) != null) {
+        while ((line = br.readLine())  != null) {
             System.out.println(line);
         }
 	} catch (MalformedURLException mue) {
