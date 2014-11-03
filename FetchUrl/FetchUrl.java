@@ -17,7 +17,7 @@ public static void main(String[] args) {
     BufferedReader br;
     String line;
     Scanner input = new  Scanner(System.in);
-
+	 try {
         url = new URL(input.next());
         is = url.openStream();
         br = new BufferedReader(new InputStreamReader(is));
@@ -25,6 +25,8 @@ public static void main(String[] args) {
         while ((line = br.readLine()) != null) {
             System.out.println(line);
         }
+	} catch (MalformedURLException mue) {
+         mue.printStackTrace();
 
 }
 }
